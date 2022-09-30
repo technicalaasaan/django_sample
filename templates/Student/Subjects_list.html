@@ -1,0 +1,17 @@
+<table>
+    <thead>
+    <th>Subject Name</th>
+    <th>Dept</th>
+    <th>Year</th>
+    </thead>
+    <tbody>
+        {% for r in object_list %}
+        <tr>
+            <td>{{ r.sub_id }}</td>
+            <td>{{ r.sub_name }}</td>
+            <td>{{ r.dept }}</td>
+            <td>{{ r.year }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
